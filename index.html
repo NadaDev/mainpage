@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나다</title>
+    <title>Document</title>
 </head>
-<body>  
-    <h1>나다#7777</h1>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<script>
+    function info(text){
+        Swal.fire({
+        text: text,
+        target: 'body',
+        toast: true,
+        position: 'bottom-right'
+    })
+    }
+</script>
+<style>
+    .asdf{
+        width: 100%;
+        height: 40%;
+        background-color: aqua;
+
+    }
+    .content{
+        background-color: black;
+    }
+    .whitefont{
+        color: white;
+        font-size: 5rem;
+    }
+    .maintext {
+        position: relative;
+        animation: first 1.5s ;
+        font-family: 'Black Han Sans', sans-serif;
+    }
+
+
+    @keyframes first {
+        0% {
+            opacity: 0%;
+            transform: translateY(-100%);
+        }
+        70%{
+            opacity: 1%;
+        }
+        100% {
+            opacity: 100%;
+            transform: translateY(0);
+        }
+    }
+</style>
+<body class="content" id="custom-target">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <span onclick="info('나다#7777')" >
+                <img style="border-radius: 15px;" src="https://cdn.discordapp.com/avatars/635394816762576897/b9f624ca0dd850970a5bed4289344801.png?size=32" >Nada
+            </span>
+
+          </a>
+          <span class="float-right">
+            <button onclick="location.href='https://discord.gg/QWSfRf7PGh'" class="btn btn-warning btn-sm">discord</button>
+          </span>
+        </div>
+      </nav>
+    <div class="maintext whitefont">
+        <div style="margin-left: 23%; margin-top: 10%;">영상</div>
+        <div style="margin-left: 43%;">음악</div>
+        <div style="margin-left: 63%;">코딩</div>
+    </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </html>
